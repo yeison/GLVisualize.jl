@@ -4,7 +4,7 @@ const table 		= Sinai_billiard(0.1)
 const max_particles = 8_000
 
 
-function BilliardModels.step!(particles, table, _)
+function step!(particles, table, _)
 	for particle in particles
  		step!(particle, table, 0.01)
  	end
